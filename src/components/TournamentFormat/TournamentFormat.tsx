@@ -1,11 +1,18 @@
+import React from 'react';
+import { IonItem, IonList, IonToggle } from '@ionic/react';
 import './TournamentFormat.css';
 interface ContainerProps { }
 
 const TournamentFormat: React.FC<ContainerProps> = () => {
   return (
-    <div id="container">
-      <h1>This is a test</h1>
-    </div>
+      <IonList>
+        <IonItem>
+          <IonToggle>5 Bass Limit</IonToggle>
+        </IonItem>
+        <IonItem>
+          <IonToggle>No Bass Limit</IonToggle>
+        </IonItem>
+      </IonList>
   );
 };
 
